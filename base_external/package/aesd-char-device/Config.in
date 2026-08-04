@@ -1,5 +1,5 @@
 
-config BR2_PACKAGE_AESD_ASSIGNMENTS
+config BR2_PACKAGE_AESD_CHAR_DEVICE
 	bool "aesd-char-device"
 	help
 	  Includes the aesdchar device driver and server application for AESD assignments.
