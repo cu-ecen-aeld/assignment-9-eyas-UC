@@ -6,7 +6,8 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 'af66242985f68cc1aec7318cc0975f4b852504fd' # assignment-5-socket in assignments-3 repo
+# needed to get the modified sever that writes into /dev/aesdchar
+AESD_ASSIGNMENTS_VERSION = '4c572bb63da474cd1126c3960a7631e601a8ecdb' # assignment-8 in assignments-3 repo
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -22,7 +23,6 @@ endef
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin/aesdsocket
 	$(INSTALL) -m 0755 $(@D)/server/S99aesdsocket $(TARGET_DIR)/etc/init.d/S99aesdsocket
-
 endef
 
 $(eval $(generic-package))
