@@ -20,8 +20,8 @@ AESD_ASSIGNMENTS_MODULE_SUBDIRS = aesd-char-driver
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
 define AESD-CHAR-DEVICE_INSTALL_TARGET_CMDS
 	$(INSTALL) -d $(TARGET_DIR)/etc/init.d
-    $(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_load $(TARGET_DIR)/etc/init.d/aesdchar_load
-    $(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_unload $(TARGET_DIR)/etc/init.d/aesdchar_unload
+	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_load $(TARGET_DIR)/etc/init.d/aesdchar_load
+	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_unload $(TARGET_DIR)/etc/init.d/aesdchar_unload
 
 endef
 
