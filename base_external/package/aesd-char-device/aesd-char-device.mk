@@ -6,19 +6,19 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD-CHAR-DEVICE_VERSION = '9ec9ddfdce24be69d3580f472bac068ee6413c8f' # assignment-8 in assignments-3 repo
+AESD_CHAR_DEVICE_VERSION = '4c572bb63da474cd1126c3960a7631e601a8ecdb' # assignment-8 in assignments-3 repo
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
-AESD-CHAR-DEVICE_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-eyas-UC.git'
-AESD-CHAR-DEVICE_SITE_METHOD = git
-AESD-CHAR-DEVICE_GIT_SUBMODULES = YES
+AESD_CHAR_DEVICE_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-eyas-UC.git'
+AESD_CHAR_DEVICE_SITE_METHOD = git
+AESD_CHAR_DEVICE_GIT_SUBMODULES = YES
 
-AESD-CHAR-DEVICE_MODULE_SUBDIRS = aesd-char-driver
+AESD_CHAR_DEVICE_MODULE_SUBDIRS = aesd-char-driver
 
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
-define AESD-CHAR-DEVICE_INSTALL_TARGET_CMDS
+define AESD_CHAR_DEVICE_INSTALL_TARGET_CMDS
 	$(INSTALL) -d $(TARGET_DIR)/etc/init.d
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_load $(TARGET_DIR)/etc/init.d/aesdchar_load
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_unload $(TARGET_DIR)/etc/init.d/aesdchar_unload
