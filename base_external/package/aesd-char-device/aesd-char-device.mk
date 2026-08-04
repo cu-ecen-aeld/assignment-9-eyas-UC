@@ -16,10 +16,6 @@ AESD-CHAR-DEVICE_GIT_SUBMODULES = YES
 
 AESD_ASSIGNMENTS_MODULE_SUBDIRS = aesd-char-driver
 
-define AESD-CHAR-DEVICE_BUILD_CMDS
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server clean
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server all
-endef
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
 define AESD-CHAR-DEVICE_INSTALL_TARGET_CMDS
