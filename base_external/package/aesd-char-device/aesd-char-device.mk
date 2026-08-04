@@ -14,7 +14,7 @@ AESD-CHAR-DEVICE_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-eya
 AESD-CHAR-DEVICE_SITE_METHOD = git
 AESD-CHAR-DEVICE_GIT_SUBMODULES = YES
 
-AESD_ASSIGNMENTS_MODULE_SUBDIRS = aesd-char-driver
+AESD-CHAR-DEVICE_MODULE_SUBDIRS = aesd-char-driver
 
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
