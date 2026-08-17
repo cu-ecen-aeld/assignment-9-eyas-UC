@@ -5,9 +5,6 @@ case "$1" in
     start)
         echo "Loading aesdchar modules..."
         sh /etc/init.d/aesdchar_load
-    
-    
-    
     ;;
     stop)
         sh /etc/init.d/aesdchar_unload
