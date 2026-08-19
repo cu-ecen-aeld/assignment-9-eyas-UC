@@ -7,7 +7,7 @@
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
 # needed to get the modified sever that writes into /dev/aesdchar
-AESD_ASSIGNMENTS_VERSION = '4644cea7efbcf75254a459fae9e2fee15b8ecfda' # assignment-9 in assignments-3 repo
+AESD_ASSIGNMENTS_VERSION = '9e8ea8baf98b20fef132881f4f78c5f7ec1636cf' # assignment-9 in assignments-3 repo
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
